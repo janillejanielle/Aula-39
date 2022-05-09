@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>Selecione o seu artista preferido</p>
+
+    <select id="artistas" onchange="selecionarArtista()">
+    
+       <option value="Amy WineHouse">Amy WineHouse</option>
+       <option value="Queen">Queen</option>
+       <option value="Lady Gaga"><LadY Gaga</option>
+       <option value="Aretha Franklin">Aretha Franklin</option>
+       <option value="Lana Del Rey">Lana Del Rey</option>
+
+    </select>
+
+    <p id="resultado"></p>
+
+    <script>
+
+        function selecionarArtista(){
+            let artista = document.getElementById("artistas").value 
+
+            document.getElementById("resultado").innerHTML = "Música da boa: " + artista
+        }
+
+
+    </script>
+        
+    
+    </body>
+</html>
